@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Sign up now</h1>
+        name:
+<input type="text" name="name" id="name" required>
+<br>Email:
+<input type="email" name="email" id="email"><br>
+password:
+<input type="password" name="pwd" id="pwd" min="5">
+<p>what is the product of 9*9?</p>
+<input id="number"> 
+<button type="button" onclick="validate()">submit</button>
+<p id="msg"></p>
+
+<script>
+    function validate()
+    {
+        var a;
+        a=document.getElementById("number").value;
+        if (a==81)
+        {
+            document.getElementById("msg").innerHTML="correct";
+    }
+else{
+    document.getElementById("msg").innerHTML="incorrect";
+}}
+</script>
+    </body>
+</html>
